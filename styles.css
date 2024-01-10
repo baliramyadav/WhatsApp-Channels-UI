@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+  width: 100%;
+  height: 0.4rem;
+}
+.vertical-scroll::-webkit-scrollbar {
+  width: 0.4rem;
+  height: 100%;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #42494e;
+  border-radius: 5px;
+}
+
+/* titles */
+
+h4 {
+  font-size: 1.2rem;
+}
+h5 {
+  font-size: 1rem;
+}
+h6 {
+  font-size: 0.95rem;
+}
+
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  color: white;
+}
+body {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidemenu {
+  background-color: #1e262c;
+  width: 30%;
+}
+.container {
+  background-color: #0b141a;
+  width: 70%;
+}
+
+.status {
+  margin-top: 34px;
+}
+
+.sidemenu-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.sidemenu-title-container i {
+  font-size: 1.2rem;
+  color: #bbbec4;
+}
+
+.status-container {
+  display: flex;
+  gap: 0.7rem;
+  overflow-x: scroll;
+  margin: 1rem 1rem 0 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.status-img-border {
+  padding: 2px;
+  border: 1px solid #bbbec4;
+  width: fit-content;
+  border-radius: 50%;
+}
+.status-img-border.active {
+  border: 1px solid #11d951;
+}
+
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.status-img-cover {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.status-container p {
+  font-size: 0.72rem;
+  margin-top: 0.5rem;
+  color: white;
+  text-align: center;
+  width: 56px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.divider {
+  margin-block: 1rem;
+  border-top: 1px solid #474d53;
+}
+
+/* channels */
+
+.channels-container {
+  margin-top: 1rem;
+  height: calc(100vh - 255px);
+  overflow-y: scroll;
+  padding: 0 1rem;
+}
+
+.channel-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+}
+
+.channel-logo-cover {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.channel-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.channel-content p {
+  font-size: 0.8rem;
+  color: #91989d;
+}
+.channel-img-cover {
+  position: relative;
+  height: 60px;
+  min-width: 60px;
+  max-width: 60px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+p.created {
+  font-size: 0.7rem;
+  margin-top: 2px;
+}
+
+/* find channels */
+
+.find-img-cover {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.find-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.find-title-container p {
+  font-size: 0.9rem;
+  color: #01a884;
+}
+
+.find-container {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.7rem;
+  overflow-x: scroll;
+  padding-bottom: 0.5rem;
+}
+
+.find-container p {
+  font-size: 0.72rem;
+  margin-top: 0.5rem;
+  color: white;
+  text-align: center;
+  width: 56px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.find-img-border {
+  position: relative;
+  height: 50px;
+  width: 50px;
+}
+
+.verified {
+  position: absolute;
+  color: #11d951;
+  right: 0;
+  bottom: -5px;
+  padding: 3px;
+  background-color: #1e262c;
+  border-radius: 50%;
+}
+
+/* cntent */
+
+.top-bar {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.top-bar .img-cover {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.top-bar .name {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.top-bar .name p {
+  font-size: 0.8rem;
+  color: #91989d;
+}
+
+.top-bar i {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+
+.content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: calc(100vh - 80px);
+  overflow-y: scroll;
+}
+
+.card {
+  background-color: #1e262c;
+  padding: 5px;
+  width: fit-content;
+  border-radius: 1rem;
+}
+
+.card .img-cover {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.description {
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+  color: white;
+  width: 400px;
+}
